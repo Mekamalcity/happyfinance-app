@@ -5,7 +5,7 @@ class LogIn extends React.Component {
         return (
             <div>
                 <h2>
-                    LogIn
+                    LogIn Page
                 </h2>
                 <div>
 

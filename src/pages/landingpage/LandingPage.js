@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
-import NavigationLandingPage from "../component/navigation/navigationLandingPage";
-import {Main1} from "../component/LandingPage/mainlandingpage"
+import NavigationLandingPage from "../../component/navigation/navigationLandingPage";
+import {Main1} from "../../component/LandingPage/mainlandingpage"
 
-import "../styles/landingpage/landingpage.css"
+import "../../styles/landingpage/landingpage.css"
 
 class LandingPage extends React.Component{
     render(){
