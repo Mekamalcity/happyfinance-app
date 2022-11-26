@@ -18,8 +18,8 @@
     margin-left: 50px;
 }
 .navigation button{
-    color: orange;
-    font-weight: bold;
+    color:darkorange;
+    font-weight: bolder;
     height: 40px;
     width: 100px;
     border-style: solid;
@@ -30,6 +30,7 @@
     margin-right: 50px;
 }
 .navigation button:hover{
+    cursor: pointer;
     background-color: orange;
     color: white;
     height: 45px;
@@ -50,6 +51,7 @@
 .navlandingpage li:hover{
     color: orange;
     margin-top: 4px;
+    cursor: pointer;
 }
 .main1{
     height: 750px;
@@ -62,6 +64,7 @@
 .main1 p{
     margin-top: 20px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 .buttonLogin{
     height: 40px;
@@ -72,6 +75,7 @@
     border-radius: 12px;
 }
 .buttonLogin:hover{
+    cursor: pointer;
     background-color: #bdf1da;
     color: #17a85b;
     border-style: solid;
