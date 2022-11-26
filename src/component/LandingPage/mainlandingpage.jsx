@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"
-import imgmain1 from '../../Asset/main1.png'
+import imgmain1 from '../../Asset/img/main1.png'
 
 function Main1() {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../../Asset/Logo.png'
+import logo from '../../Asset/img/Logo.png'
 
 function NavigationLandingPage() {
     return (
