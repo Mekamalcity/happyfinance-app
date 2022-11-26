@@ -1,16 +1,50 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 * {
     padding: 0;
     margin: 0;
+    /* height: 100%; */
 }
-.container{
-    width:100%;
-    height:100%;
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     display: flex;
+    align-items: center;
+    border-color: black;
+    border-width: 2;
+    border-style: solid;
 }
-.container-signup1{
-    width:50%;
-    height: 50%;
-}
-.container-signup2{
+
+.container-signup1 {
     width: 50%;
+    /* height:auto; */
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    border-width: 2;
+    border-style: solid;
+}
+.input-signup{
+    width: 80%;
+    height: 40px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #e0e6e4;
+    padding-left: 10px;
+    font-family: FontAwesome;
+}
+.container-signup2 {
+    width: 50%;
+}
+
+.container-signup1 h2 {
+    color: #2ea678;
+}
+.email-icon{
+    position: 'absolute';
+    left: 10
 }

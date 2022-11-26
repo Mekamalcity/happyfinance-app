@@ -2,13 +2,18 @@ import React from "react";
 import '../../styles/signup/signup.css'
 import firebase from "../../config/firebase"
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import Button from "../../component/Atoms/Button";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import 'font-awesome/css/font-awesome.min.css';
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 const auth = getAuth();
 
 class SignUp extends React.Component {
     state = {
         email: '',
-        password: ''
+        password: '',
+        Loading: false
     }
 
     handleChangeText = (e) => {
@@ -18,21 +23,28 @@ class SignUp extends React.Component {
         })
     }
     handleDaftar = () => {
-        console.log("data befor send :", this.state.email, this.state.password)
-        const {email, password} = this.state
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in 
-                const user = userCredential.user;
-                // ...
-                console.log("succes :", userCredential)
+        // const { email, password } = this.state
+        this.setState({
+            Loading: true
+        })
+        setTimeout(() => {
+            this.setState({
+                Loading: false
             })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                // ..
-                console.log(errorCode, errorMessage)
-            });
+        }, 5000);
+        // createUserWithEmailAndPassword(auth, email, password)
+        //     .then((userCredential) => {
+        //         // Signed in 
+        //         const user = userCredential.user;
+        //         // ...
+        //         console.log("succes :", userCredential)
+        //     })
+        //     .catch((error) => {
+        //         const errorCode = error.code;
+        //         const errorMessage = error.message;
+        //         // ..
+        //         console.log(errorCode, errorMessage)
+        //     });
     }
 
     render() {
@@ -45,15 +57,16 @@ class SignUp extends React.Component {
                         </h2>
                     </div>
                     <div>
-
-                    </div>
-                    <form>
-                        <input placeholder="Email" id="email" type="text" onChange={this.handleChangeText} />
-                        <input placeholder="Password" id="password" type="password" onChange={this.handleChangeText} />
-                        <button onClick={this.handleDaftar}>
+                        <form>
+                            <i><FontAwesomeIcon className="email-icon" icon={faEnvelope}></FontAwesomeIcon></i>
+                            <input className="input-signup" placeholder="8#xf0e0; Email" id="email" type="text" onChange={this.handleChangeText} />
+                            <input className="input-signup" placeholder="Password" id="password" type="password" onChange={this.handleChangeText} />
+                            {/* <button onClick={this.handleDaftar}>
                             Daftar
-                        </button>
-                    </form>
+                        </button> */}
+                            <Button onClick={this.handleDaftar} title="Signup" loading={this.state.Loading} />
+                        </form>
+                    </div>
                 </div>
                 <div className="container-signup2">
 
