@@ -8,16 +8,6 @@ class User extends React.Component {
                     User Page
                 </h2>
                 <div>
-
-                <form>
-                    <input/>
-                    <input/>
-                    <input/>
-                    <input/>
-                    <button>
-                        User
-                    </button>
-                </form>
                 </div>
             </div>
         )

@@ -90,6 +90,9 @@
 .container-main1 h1{
     font-size: 48px;
 }
+.container-main1 img{
+    width: 100%
+}
 
 @media only screen and (max-width: 750px) {
     .navlandingpage {
