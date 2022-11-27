@@ -86,14 +86,16 @@ class SignUp extends React.Component {
                             Senang Bertemu Denganmu
                         </p>
                         <h2>Wellcome</h2>
-                        <hr/>
+                        <hr />
                         <p>
-                            Sudah Memiliki Akun? <br/>
+                            Sudah Memiliki Akun? <br />
                             Silahkan LogIn Di bawah
                         </p>
-                        <button>
-                            Masuk
-                        </button>
+                        <Link to={"/login"}>
+                            <button>
+                                Masuk
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
