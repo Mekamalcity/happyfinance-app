@@ -4,8 +4,8 @@ import firebase from "../../config/firebase"
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import Button from "../../component/Atoms/Button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import 'font-awesome/css/font-awesome.min.css';
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faLock, faLeftLong } from "@fortawesome/free-solid-svg-icons"
+import { Link } from "react-router-dom";
 
 const auth = getAuth();
 
@@ -50,26 +50,51 @@ class SignUp extends React.Component {
     render() {
         return (
             <div className="container">
+                <Link to={"/"}>
+                    <div className="kembali">
+                        <h3>
+                            <FontAwesomeIcon icon={faLeftLong}>Kembali</FontAwesomeIcon>Kembali
+                        </h3>
+                    </div>
+                </Link>
                 <div className="container-signup1">
                     <div>
                         <h2>
                             Signup Account
                         </h2>
                     </div>
-                    <div>
+                    <div className="container-form">
                         <form>
-                            <i><FontAwesomeIcon className="email-icon" icon={faEnvelope}></FontAwesomeIcon></i>
-                            <input className="input-signup" placeholder="8#xf0e0; Email" id="email" type="text" onChange={this.handleChangeText} />
-                            <input className="input-signup" placeholder="Password" id="password" type="password" onChange={this.handleChangeText} />
+                            <div>
+                                <i><FontAwesomeIcon className="email-icon" icon={faEnvelope}></FontAwesomeIcon></i>
+                                <input className="input-signup" placeholder="Email" id="email" type="text" onChange={this.handleChangeText} />
+                            </div>
+                            <div>
+                                <i><FontAwesomeIcon className="lock-icon" icon={faLock}></FontAwesomeIcon></i>
+                                <input className="input-signup" placeholder="Password" id="password" type="password" onChange={this.handleChangeText} />
+                            </div>
                             {/* <button onClick={this.handleDaftar}>
                             Daftar
                         </button> */}
-                            <Button onClick={this.handleDaftar} title="Signup" loading={this.state.Loading} />
+                            <Button onClick={this.handleDaftar} title="Daftar" loading={this.state.Loading} />
                         </form>
                     </div>
                 </div>
                 <div className="container-signup2">
-
+                    <div className="menuju-login">
+                        <p>
+                            Senang Bertemu Denganmu
+                        </p>
+                        <h2>Wellcome</h2>
+                        <hr/>
+                        <p>
+                            Sudah Memiliki Akun? <br/>
+                            Silahkan LogIn Di bawah
+                        </p>
+                        <button>
+                            Masuk
+                        </button>
+                    </div>
                 </div>
             </div>
         )

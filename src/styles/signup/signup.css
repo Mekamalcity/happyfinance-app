@@ -1,4 +1,5 @@
 @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
 * {
     padding: 0;
     margin: 0;
@@ -13,38 +14,108 @@
     bottom: 0;
     display: flex;
     align-items: center;
-    border-color: black;
-    border-width: 2;
-    border-style: solid;
 }
 
 .container-signup1 {
-    width: 50%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
     /* height:auto; */
     align-items: center;
     justify-content: center;
-    border-color: black;
+    /* border-color: black;
     border-width: 2;
-    border-style: solid;
+    border-style: solid; */
 }
-.input-signup{
-    width: 80%;
+
+.input-signup {
+    width: 90%;
     height: 40px;
-    margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 10px;
     border-style: none;
     background-color: #e0e6e4;
-    padding-left: 10px;
-    font-family: FontAwesome;
+    padding-left: 65px;
 }
+
+.container-signup1 form {
+    position: relative;
+
+}
+
 .container-signup2 {
-    width: 50%;
+    width: 40%;
+    height: 100%;
+    background-image: url('../../Asset/img/Signin.png');
+    background-position: center;
+    background-size: auto;
+    background-color: #2ea678;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-signup2 hr {
+    border-style: none;
+    background-color: white;
+    height: 3px;
+}
+
+.container-signup2 h2 {
+    font-size: 30px
+}
+
+.menuju-login {
+    text-align: center;
 }
 
 .container-signup1 h2 {
     color: #2ea678;
+    margin-bottom: 40px;
+    font-size: 30px;
 }
-.email-icon{
-    position: 'absolute';
-    left: 10
+
+.email-icon {
+    position: absolute;
+    left: 20px;
+    top: 7px;
+    font-size: 25px;
+    color: #999798;
+}
+
+.container-form {
+    width: 80%;
+}
+
+.lock-icon {
+    position: absolute;
+    left: 20px;
+    top: 72px;
+    font-size: 25px;
+    color: #999798;
+}
+
+.container-form button {
+    margin-top: 15px;
+    width: 100%;
+    height: 35px;
+    background-color: #2ea678;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.kembali {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: #2ea678;
+}
+
+.kembali h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
