@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import NavigationLandingPage from "../../component/navigation/navigationLandingPage";
-import {Main1} from "../../component/LandingPage/mainlandingpage"
+import {Main1,Main2} from "../../component/LandingPage/mainlandingpage"
 
 import "../../styles/landingpage/landingpage.css"
 
@@ -10,6 +10,7 @@ class LandingPage extends React.Component{
             <Fragment>
                 <NavigationLandingPage/>
                 <Main1/>
+                <Main2/>
             </Fragment>
         )
     }

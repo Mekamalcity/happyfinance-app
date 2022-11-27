@@ -1,7 +1,8 @@
-/* @import url(https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap); */
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap);
 * {
     padding: 0;
     margin: 0;
+    font-family: "Nunito";
 }
 .navigation{
     display: flex;
@@ -98,6 +99,20 @@
 .container-main1 img{
     width: 100%
 }
+
+
+/* Main yang ke 2 */
+
+.container-main2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+}
+
 
 @media only screen and (max-width: 750px) {
     .navlandingpage {

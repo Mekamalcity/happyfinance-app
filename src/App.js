@@ -8,6 +8,8 @@ import { Provider } from "react-redux";
 import {store} from './config/redux';
 
 
+
+
 class App extends React.Component {
   render() {
     return (

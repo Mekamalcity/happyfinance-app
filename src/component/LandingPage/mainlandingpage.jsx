@@ -28,4 +28,24 @@ function Main1() {
     )
 }
 
-export { Main1 };
+function Main2() {
+    return (
+        <div className="container-main2">
+            <div>
+                <div>
+                    <h1>
+                        Apa itu <font color="green">Happy</font>Finance?
+                    </h1>
+                    <hr />
+                </div>
+                <p>
+                    Happy<font color="green">Finance</font> app merupakan aplikasi berbasis web yang digunakan<br />
+                    untuk mengatur/mengelola keuangan serta daftar kebutuhan belanja agar<br />
+                    membantu ibu rumah tangga dalam menyelesaikan pekerjaan rumahnya.
+                </p>
+            </div>
+        </div>
+    )
+}
+
+export { Main1, Main2 };
