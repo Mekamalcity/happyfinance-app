@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styles/signup/signup.css'
+import '../../styles/signup/signup.css';
 import firebase from "../../config/firebase"
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import Button from "../../component/Atoms/Button";
@@ -53,7 +53,7 @@ class SignUp extends React.Component {
                 <Link to={"/"}>
                     <div className="kembali">
                         <h3>
-                            <FontAwesomeIcon icon={faLeftLong}>Kembali</FontAwesomeIcon>Kembali
+                            <FontAwesomeIcon className="kembali-icon" icon={faLeftLong}>Kembali</FontAwesomeIcon>Kembali
                         </h3>
                     </div>
                 </Link>

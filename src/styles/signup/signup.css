@@ -18,6 +18,16 @@
     align-items: center;
 }
 
+.container-login {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
 .container-signup1 {
     width: 60%;
     display: flex;
@@ -67,6 +77,8 @@
 }
 
 .container-signup2 h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
     font-size: 30px
 }
 
@@ -136,6 +148,15 @@
     top: 10px;
     left: 10px;
     color: #2ea678;
+    z-index: 1000;
+}
+
+.kembali-login {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: white;
+    z-index: 1000;
 }
 
 .kembali h2 {
@@ -144,9 +165,27 @@
     align-items: center;
 }
 
+.kembali-icon {
+    margin-right: 10px;
+}
+
 @media only screen and (max-width: 790px) {
     .container {
         flex-direction: column;
+        position: static;
+        height: auto;
+    }
+
+    .kembali-login {
+        color: black;
+    }
+
+    .kembali {
+        color: black;
+    }
+
+    .container-login {
+        flex-direction: column-reverse;
         position: static;
         height: auto;
     }
@@ -163,12 +202,14 @@
     .input-signup {
         width: 90%;
     }
-    .container-signup2{
+
+    .container-signup2 {
         width: 100%;
         height: 700px;
     }
 }
-@media only screen and (max-width: 650px){
+
+@media only screen and (max-width: 650px) {
     .input-signup {
         width: 85%;
     }
