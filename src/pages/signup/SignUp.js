@@ -1,50 +1,26 @@
 import React from "react";
 import '../../styles/signup/signup.css';
-import firebase from "../../config/firebase"
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import Button from "../../component/Atoms/Button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLock, faLeftLong } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-router-dom";
-
-const auth = getAuth();
+import { connect } from "react-redux";
+import { signupUserAPI } from "../../config/redux/action";
 
 class SignUp extends React.Component {
     state = {
         email: '',
-        password: '',
-        Loading: false
+        password: ''
     }
 
     handleChangeText = (e) => {
-        console.log(e.target.id)
         this.setState({
             [e.target.id]: e.target.value
         })
     }
     handleDaftar = () => {
-        // const { email, password } = this.state
-        this.setState({
-            Loading: true
-        })
-        setTimeout(() => {
-            this.setState({
-                Loading: false
-            })
-        }, 5000);
-        // createUserWithEmailAndPassword(auth, email, password)
-        //     .then((userCredential) => {
-        //         // Signed in 
-        //         const user = userCredential.user;
-        //         // ...
-        //         console.log("succes :", userCredential)
-        //     })
-        //     .catch((error) => {
-        //         const errorCode = error.code;
-        //         const errorMessage = error.message;
-        //         // ..
-        //         console.log(errorCode, errorMessage)
-        //     });
+        const { email, password } = this.state
+        this.props.signupAPI({email, password})
     }
 
     render() {
@@ -73,10 +49,7 @@ class SignUp extends React.Component {
                                 <i><FontAwesomeIcon className="lock-icon" icon={faLock}></FontAwesomeIcon></i>
                                 <input className="input-signup" placeholder="Password" id="password" type="password" onChange={this.handleChangeText} />
                             </div>
-                            {/* <button onClick={this.handleDaftar}>
-                            Daftar
-                        </button> */}
-                            <Button onClick={this.handleDaftar} title="Daftar" loading={this.state.Loading} />
+                            <Button onClick={this.handleDaftar} title="Daftar" loading={this.props.Loading} />
                         </form>
                     </div>
                 </div>
@@ -103,4 +76,12 @@ class SignUp extends React.Component {
     }
 }
 
-export default SignUp;
+const reduxState = (state) => ({
+    Loading: state.Loading
+})
+
+const reduxDispatch = (dispatch) => ({
+    signupAPI: (data) => dispatch(signupUserAPI(data))
+})
+
+export default connect(reduxState, reduxDispatch)(SignUp);
