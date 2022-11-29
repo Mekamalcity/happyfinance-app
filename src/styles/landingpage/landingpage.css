@@ -113,6 +113,20 @@
     text-align: center;
 }
 
+/* Main yang ke 3 */
+
+.container-main3{
+    background-color: #2ea678;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    border-top-left-radius: 300px;
+    text-align: center;
+}
+
 
 @media only screen and (max-width: 750px) {
     .navlandingpage {

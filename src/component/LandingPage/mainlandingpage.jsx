@@ -48,4 +48,24 @@ function Main2() {
     )
 }
 
-export { Main1, Main2 };
+function Main3() {
+    return (
+        <div className="container-main3">
+            <div>
+                <h1>
+                    Kenapa Memilih Happy Finance?
+                </h1>
+                <hr />
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    )
+
+}
+
+export { Main1, Main2, Main3 };
