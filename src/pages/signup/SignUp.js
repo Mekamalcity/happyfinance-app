@@ -43,11 +43,11 @@ class SignUp extends React.Component {
                         <form>
                             <div>
                                 <i><FontAwesomeIcon className="email-icon" icon={faEnvelope}></FontAwesomeIcon></i>
-                                <input className="input-signup" placeholder="Email" id="email" type="text" onChange={this.handleChangeText} />
+                                <input className="input-signup" placeholder="Email" id="email" type="text" onChange={this.handleChangeText} required/>
                             </div>
                             <div>
                                 <i><FontAwesomeIcon className="lock-icon" icon={faLock}></FontAwesomeIcon></i>
-                                <input className="input-signup" placeholder="Password" id="password" type="password" onChange={this.handleChangeText} />
+                                <input className="input-signup" placeholder="Password" id="password" type="password" onChange={this.handleChangeText} required/>
                             </div>
                             <Button onClick={this.handleDaftar} title="Daftar" loading={this.props.Loading} />
                         </form>
