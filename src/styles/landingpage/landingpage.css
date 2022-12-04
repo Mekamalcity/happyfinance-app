@@ -172,7 +172,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    padding: 25px;
     /* border-color: black;
     border-style: solid;
     border-width: 2px; */
@@ -189,6 +189,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 25px;
 }
 
 .why-item-1 h3{
@@ -212,5 +213,18 @@
     }
     .container-main1 img{
         display: none;
+    }
+    .why-happyfinance{
+        flex-direction: column;
+    }
+    .why-item-1{
+        width: 80%;
+    }
+    .why-item-2{
+        width: 80%;
+    }
+    .container-main3{
+        padding-top: 300px;
+        padding-bottom: 300px;
     }
   }

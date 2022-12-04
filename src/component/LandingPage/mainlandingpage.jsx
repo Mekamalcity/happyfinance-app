@@ -62,42 +62,42 @@ function Main3() {
                     <hr />
                 </div>
                 <div className="why-happyfinance">
-                    <div className="why-item-1">
+                    <div className="why-item-2">
                         <FontAwesomeIcon className="fontAwesomeIcon" icon={faChartColumn}></FontAwesomeIcon>
                         <h3>
                             Mengatur Keuangan
                         </h3>
                         <p>
-
+                            Dengan menggunakan HappyFinance App Anda dapat mngatur keuangan jadi lebih mudah dan tertata
                         </p>
                     </div>
-                    <div className="why-item-2">
+                    <div className="why-item-1">
                         <FontAwesomeIcon className="fontAwesomeIcon" icon={faPersonCircleCheck}></FontAwesomeIcon>
                         <h3>
                             Mudah Digunakan
                         </h3>
                         <p>
-
+                            HappyFinance App sangat mudah digunakan untuk keperluan mengatur keuangan
                         </p>
                     </div>
                 </div>
                 <div className="why-happyfinance">
-                    <div className="why-item-2">
+                    <div className="why-item-1">
                         <FontAwesomeIcon className="fontAwesomeIcon" icon={faListSquares}></FontAwesomeIcon>
                         <h3>
                             Membuat Daftar Belanja
                         </h3>
                         <p>
-
+                            Dengan menggunakan HappyFinance App Anda jadi dapat membuat daftar belanjaan agar lebih mudah mengatur keuangan
                         </p>
                     </div>
-                    <div className="why-item-1">
+                    <div className="why-item-2">
                         <FontAwesomeIcon className="fontAwesomeIcon" icon={faDesktop}></FontAwesomeIcon>
                         <h3>
                             Dapat diakses kapanpun
                         </h3>
                         <p>
-
+                            HappyFinance App sangat mudah diakses kapanpun baik di smartphone maupun desktop
                         </p>
                     </div>
                 </div>
