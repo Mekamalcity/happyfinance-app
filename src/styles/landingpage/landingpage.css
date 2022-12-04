@@ -116,15 +116,93 @@
 /* Main yang ke 3 */
 
 .container-main3{
+    width: 100%;
     background-color: #2ea678;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     border-top-left-radius: 300px;
+    border-bottom-right-radius: 300px;
     text-align: center;
+    /* border-color: black;
+    border-style: solid;
+    border-width: 2px; */
+}
+
+.container-main3 hr{
+    width: 500px;
+    background-color: white;
+    height: 2px;
+    border-style: none;
+}
+
+.all-item-main3{
+    width: 100%;
+}
+
+.title-main3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.why-happyfinance{
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    
+    /* border-color: black;
+    border-style: solid;
+    border-width: 2px; */
+}
+
+.why-item-1{
+    margin: 30px;
+    width: 35%;
+    height: 300px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* border-color: black;
+    border-style: solid;
+    border-width: 2px; */
+
+}
+
+.why-item-2{
+    margin: 30px;
+    width: 35%;
+    height: 300px;
+    background-color: #1e7365;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-item-1 h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.why-item-2 h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fontAwesomeIcon{
+    height: 50px;
 }
 
 

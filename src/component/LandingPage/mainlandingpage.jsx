@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom"
 import imgmain1 from '../../Asset/img/main1.png'
+import { faChartColumn, faPersonCircleCheck, faListSquares, faDesktop } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 function Main1() {
     return (
@@ -51,21 +54,63 @@ function Main2() {
 function Main3() {
     return (
         <div className="container-main3">
-            <div>
-                <h1>
-                    Kenapa Memilih Happy Finance?
-                </h1>
-                <hr />
-                <div>
-
+            <div className="all-item-main3">
+                <div className="title-main3">
+                    <h1>
+                        Kenapa Memilih Happy Finance?
+                    </h1>
+                    <hr />
                 </div>
-                <div>
+                <div className="why-happyfinance">
+                    <div className="why-item-1">
+                        <FontAwesomeIcon className="fontAwesomeIcon" icon={faChartColumn}></FontAwesomeIcon>
+                        <h3>
+                            Mengatur Keuangan
+                        </h3>
+                        <p>
 
+                        </p>
+                    </div>
+                    <div className="why-item-2">
+                        <FontAwesomeIcon className="fontAwesomeIcon" icon={faPersonCircleCheck}></FontAwesomeIcon>
+                        <h3>
+                            Mudah Digunakan
+                        </h3>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <div className="why-happyfinance">
+                    <div className="why-item-2">
+                        <FontAwesomeIcon className="fontAwesomeIcon" icon={faListSquares}></FontAwesomeIcon>
+                        <h3>
+                            Membuat Daftar Belanja
+                        </h3>
+                        <p>
+
+                        </p>
+                    </div>
+                    <div className="why-item-1">
+                        <FontAwesomeIcon className="fontAwesomeIcon" icon={faDesktop}></FontAwesomeIcon>
+                        <h3>
+                            Dapat diakses kapanpun
+                        </h3>
+                        <p>
+
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     )
+}
+function Main4() {
+    return(
+        <div className="container-main4">
 
+        </div>
+    )
 }
 
-export { Main1, Main2, Main3 };
+export { Main1, Main2, Main3, Main4 };
