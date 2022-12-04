@@ -1,10 +1,12 @@
 @import url(https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap);
+
 * {
     padding: 0;
     margin: 0;
     font-family: "Nunito";
 }
-.navigation{
+
+.navigation {
     display: flex;
     height: 85px;
     width: 100%;
@@ -15,12 +17,14 @@
     z-index: 1000;
     top: 0;
 }
-.navigation img{
+
+.navigation img {
     height: 40px;
     margin-left: 50px;
 }
-.navigation button{
-    color:darkorange;
+
+.navigation button {
+    color: darkorange;
     font-weight: bolder;
     height: 40px;
     width: 100px;
@@ -31,7 +35,8 @@
     border-color: orange;
     margin-right: 50px;
 }
-.navigation button:hover{
+
+.navigation button:hover {
     cursor: pointer;
     background-color: orange;
     color: white;
@@ -39,36 +44,42 @@
     width: 105px;
     border-color: white;
 }
-.navlandingpage{
+
+.navlandingpage {
     display: flex;
     flex-direction: row;
     color: black;
     list-style: none;
 }
-.navlandingpage li{
+
+.navlandingpage li {
     margin-left: 20px;
     margin-right: 20px;
     font-weight: bolder;
 }
-.navlandingpage li:hover{
+
+.navlandingpage li:hover {
     color: orange;
     margin-top: 4px;
     cursor: pointer;
 }
-.main1{
+
+.main1 {
     height: 750px;
-    background: linear-gradient(#bdf1da, 
-    #f7fdfb);
+    background: linear-gradient(#bdf1da,
+            #f7fdfb);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.main1 p{
+
+.main1 p {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 500;
 }
-.buttonLogin{
+
+.buttonLogin {
     height: 40px;
     width: 120px;
     background-color: #17a85b;
@@ -76,7 +87,8 @@
     border-style: none;
     border-radius: 12px;
 }
-.buttonLogin:hover{
+
+.buttonLogin:hover {
     cursor: pointer;
     background-color: #bdf1da;
     color: #17a85b;
@@ -84,19 +96,19 @@
     border-width: 3px;
     border-color: #17a85b;
 }
-.container-main1{
+
+.container-main1 {
     width: 80%;
-    /* border-color: black;
-    border-width: 2px;
-    border-style: solid; */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.container-main1 h1{
+
+.container-main1 h1 {
     font-size: 48px;
 }
-.container-main1 img{
+
+.container-main1 img {
     width: 100%
 }
 
@@ -113,9 +125,14 @@
     text-align: center;
 }
 
+.container-main2 hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* Main yang ke 3 */
 
-.container-main3{
+.container-main3 {
     width: 100%;
     background-color: #2ea678;
     color: white;
@@ -127,42 +144,40 @@
     border-top-left-radius: 300px;
     border-bottom-right-radius: 300px;
     text-align: center;
-    /* border-color: black;
-    border-style: solid;
-    border-width: 2px; */
 }
 
-.container-main3 hr{
+.container-main3 hr {
     width: 500px;
     background-color: white;
     height: 2px;
     border-style: none;
+    margin-top: 20px;
 }
 
-.all-item-main3{
+.all-item-main3 {
     width: 100%;
 }
 
-.title-main3{
+.title-main3 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.why-happyfinance{
+.why-happyfinance {
     display: flex;
     width: 100%;
     margin-top: 40px;
     justify-content: center;
     align-items: center;
-    
+
     /* border-color: black;
     border-style: solid;
     border-width: 2px; */
 }
 
-.why-item-1{
+.why-item-1 {
     margin: 30px;
     width: 35%;
     height: 300px;
@@ -179,7 +194,7 @@
 
 }
 
-.why-item-2{
+.why-item-2 {
     margin: 30px;
     width: 35%;
     height: 300px;
@@ -192,39 +207,49 @@
     padding: 25px;
 }
 
-.why-item-1 h3{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.why-item-1 h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.why-item-2 h3{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.why-item-2 h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.fontAwesomeIcon{
-    height: 50px;
+.fontAwesomeIcon {
+    height: 55px;
 }
 
 
 @media only screen and (max-width: 750px) {
     .navlandingpage {
-      display: none;
-    }
-    .container-main1 img{
         display: none;
     }
-    .why-happyfinance{
+
+    .container-main1 img {
+        display: none;
+    }
+
+    .why-happyfinance {
         flex-direction: column;
     }
-    .why-item-1{
+
+    .why-item-1 {
         width: 80%;
+        margin: 0px;
     }
-    .why-item-2{
+
+    .why-item-2 {
         width: 80%;
+        margin: 0px
     }
-    .container-main3{
+
+    .container-main3 {
         padding-top: 300px;
         padding-bottom: 300px;
     }
-  }
+    .container-main3 hr{
+        width: 100%;
+    }
+}

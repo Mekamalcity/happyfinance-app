@@ -1,3 +1,79 @@
 .container-main4{
-    height: 300px;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-fitur{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-fitur hr{
+    width: 500px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.fitur-happyfinance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fitur-item{
+    background-color: white;
+    padding: 25px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fitur-item h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.fontAwesomeIcon-fitur{
+    color: #17a85b;
+    height: 55px;
+}
+.container-main5{
+    width: 100%;
+    background-color: #2ea678;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    border-top-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+}
+.our-team{
+    width: 80%;
+}
+.our-team hr{
+    width: 500px;
+    background-color: white;
+    height: 2px;
+    border-style: none;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+    .fitur-happyfinance{
+        flex-direction: column;
+    }
+    .container-main4{
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .container-fitur hr{
+        width: 100%;
+    }
 }

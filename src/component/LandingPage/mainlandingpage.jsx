@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"
 import imgmain1 from '../../Asset/img/main1.png'
-import { faChartColumn, faPersonCircleCheck, faListSquares, faDesktop } from "@fortawesome/free-solid-svg-icons"
+import { faChartColumn, faPersonCircleCheck, faListSquares, faDesktop, faBasketShopping, faNewspaper } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
@@ -106,9 +106,43 @@ function Main3() {
     )
 }
 function Main4() {
-    return(
+    return (
         <div className="container-main4">
-
+            <div className="container-fitur">
+                <h1>
+                    Fitur <font color="green">Happy</font>Finance
+                </h1>
+                <hr />
+                <div className="fitur-happyfinance">
+                    <div className="fitur-item">
+                        <FontAwesomeIcon className="fontAwesomeIcon-fitur" icon={faBasketShopping}></FontAwesomeIcon>
+                        <h3>
+                            Daftar Belanja
+                        </h3>
+                        <p>
+                            Dengan menggunakan HappyFinance App Anda dapat mngatur keuangan jadi lebih mudah dan tertata
+                        </p>
+                    </div>
+                    <div className="fitur-item">
+                        <FontAwesomeIcon className="fontAwesomeIcon-fitur" icon={faChartColumn}></FontAwesomeIcon>
+                        <h3>
+                            Menajemen Keuangan
+                        </h3>
+                        <p>
+                            Dengan menggunakan HappyFinance App Anda dapat mngatur keuangan jadi lebih mudah dan tertata
+                        </p>
+                    </div>
+                    <div className="fitur-item">
+                        <FontAwesomeIcon className="fontAwesomeIcon-fitur" icon={faNewspaper}></FontAwesomeIcon>
+                        <h3>
+                        Artikel
+                        </h3>
+                        <p>
+                            Dengan menggunakan HappyFinance App Anda dapat mngatur keuangan jadi lebih mudah dan tertata
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
