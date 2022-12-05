@@ -134,8 +134,7 @@
 
 .container-main3 {
     width: 100%;
-    background-color: #2ea678;
-    color: white;
+    background-color: #bff0da;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,7 +147,7 @@
 
 .container-main3 hr {
     width: 500px;
-    background-color: white;
+    background-color: black;
     height: 2px;
     border-style: none;
     margin-top: 20px;
@@ -171,15 +170,15 @@
     margin-top: 40px;
     justify-content: center;
     align-items: center;
+}
 
-    /* border-color: black;
-    border-style: solid;
-    border-width: 2px; */
+.fade{
+    width: 35%;
+    margin: 20px;
 }
 
 .why-item-1 {
-    margin: 30px;
-    width: 35%;
+    width: auto;
     height: 300px;
     background-color: white;
     color: black;
@@ -188,15 +187,12 @@
     justify-content: center;
     align-items: center;
     padding: 25px;
-    /* border-color: black;
-    border-style: solid;
-    border-width: 2px; */
+    
 
 }
 
 .why-item-2 {
-    margin: 30px;
-    width: 35%;
+    width: auto;
     height: 300px;
     background-color: #1e7365;
     color: white;
@@ -243,6 +239,9 @@
     .why-item-2 {
         width: 80%;
         margin: 0px
+    }
+    .fade{
+        width: 90%;
     }
 
     .container-main3 {

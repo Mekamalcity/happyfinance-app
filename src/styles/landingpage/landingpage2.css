@@ -43,8 +43,7 @@
 }
 .container-main5{
     width: 100%;
-    background-color: #2ea678;
-    color: white;
+    background-color: #bff0da;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,10 +57,18 @@
 }
 .our-team hr{
     width: 500px;
-    background-color: white;
+    background-color: black;
     height: 2px;
     border-style: none;
     margin-top: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bff0da;
+    height: 300px;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 750px) {
