@@ -1,81 +1,98 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from 'react-redux'
 import '../../styles/signup/signup.css'
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-// import Button from "../../component/Atoms/Button";
+import Button from "../../component/Atoms/Button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLock, faLeftLong } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-router-dom";
+import { loginUserAPI } from "../../config/redux/action";
+import { useNavigate } from "react-router-dom";
 
-class LogIn extends React.Component {
-    render() {
-        return (
-            <div className="container-login">
-                <Link to={"/"}>
-                    <div className="kembali-login">
-                        <h3>
-                            <FontAwesomeIcon className="kembali-icon" icon={faLeftLong}>Kembali</FontAwesomeIcon>Kembali
-                        </h3>
-                    </div>
-                </Link>
-                <div className="container-signup2">
-                    <div className="menuju-login">
-                        <p>
-                            Senang Bertemu Denganmu Lagi
-                        </p>
-                        <h2>Wellcome Back</h2>
-                        <hr />
-                        <p>
-                            Belum Memiliki Akun? <br />
-                            Silahkan Daftar Di bawah
-                        </p>
-                        <Link to={"/signup"}>
-                            <button>
-                                Daftar
-                            </button>
-                        </Link>
-                    </div>
+
+function LogIn({Loading, user, loginAPI, isLogin}) {
+    const navigate = useNavigate()
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
+    function handleEmail(e){
+        setEmail(e.target.value)
+    }
+    function handlePassword(e){
+        setPassword(e.target.value)
+    }
+    async function HandleMasuk(){
+        let data = await loginAPI({ email, password }).catch(err => err);
+        console.log(data)
+        if (data === true) {
+            console.log(user)
+            console.log(isLogin)
+            setEmail('')
+            setPassword('')
+            navigate("/")
+        } else {
+            console.log('login fail')
+        }
+    }
+    return (
+        <div className="container-login">
+            <Link to={"/"}>
+                <div className="kembali-login">
+                    <h3>
+                        <FontAwesomeIcon className="kembali-icon" icon={faLeftLong}>Kembali</FontAwesomeIcon>Kembali
+                    </h3>
                 </div>
-                <div className="container-signup1">
-                    <div>
-                        <h2>
-                            LogIn Account
-                        </h2>
-                    </div>
-                    <div className="container-form">
-                        <form>
-                            <div>
-                                <i><FontAwesomeIcon className="email-icon" icon={faEnvelope}></FontAwesomeIcon></i>
-                                <input className="input-signup" placeholder="Email" id="email" type="text" onChange={this.handleChangeText} />
-                            </div>
-                            <div>
-                                <i><FontAwesomeIcon className="lock-icon" icon={faLock}></FontAwesomeIcon></i>
-                                <input className="input-signup" placeholder="Password" id="password" type="password" onChange={this.handleChangeText} />
-                            </div>
-                            {/* <button onClick={this.handleDaftar}>
-                        Daftar
-                    </button> */}
-                            <button>
-                                Masuk
-                            </button>
-                        </form>
+            </Link>
+            <div className="container-signup2">
+                <div className="menuju-login">
+                    <p>
+                        Senang Bertemu Denganmu Lagi
+                    </p>
+                    <h2>Wellcome Back</h2>
+                    <hr />
+                    <p>
+                        Belum Memiliki Akun? <br />
+                        Silahkan Daftar Di bawah
+                    </p>
+                    <Link to={"/signup"}>
+                        <button>
+                            Daftar
+                        </button>
+                    </Link>
+                </div>
+            </div>
+            <div className="container-signup1">
+                <div>
+                    <h2>
+                        LogIn Account
+                    </h2>
+                </div>
+                <div className="container-form">
+                    <div className="form">
+                        <div>
+                            <i><FontAwesomeIcon className="email-icon" icon={faEnvelope}></FontAwesomeIcon></i>
+                            <input className="input-signup" placeholder="Email" id="email" type="text" onChange={handleEmail} />
+                        </div>
+                        <div>
+                            <i><FontAwesomeIcon className="lock-icon" icon={faLock}></FontAwesomeIcon></i>
+                            <input className="input-signup" placeholder="Password" id="password" type="password" onChange={handlePassword} />
+                        </div>
+                        <Button onClick={HandleMasuk} title="Masuk" loading={Loading} />
                     </div>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
-{/* <form>
-                    <input/>
-                    <input/>
-                    <button>
-                        LogIn
-                    </button>
-                </form> */}
 
 const reduxState = (state) => ({
-    popup: state.popup
+    Loading: state.Loading,
+    user: state.user,
+    isLogin: state.isLogin
 })
 
-export default connect(reduxState, null)(LogIn);
+const reduxDispatch = (dispatch) => ({
+    loginAPI: (data) => dispatch(loginUserAPI(data))
+})
+
+export default connect(reduxState, reduxDispatch)(LogIn);

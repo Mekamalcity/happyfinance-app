@@ -9,7 +9,7 @@ const Button = ({ onClick, title, loading }) => {
         )
     }
     return (
-        <button onClick={onClick}>
+        <button type='button' onClick={onClick}>
             {title}
         </button>
     )

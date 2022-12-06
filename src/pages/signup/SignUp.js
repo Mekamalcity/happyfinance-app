@@ -21,6 +21,10 @@ class SignUp extends React.Component {
     handleDaftar = () => {
         const { email, password } = this.state
         this.props.signupAPI({email, password})
+        this.setState({
+            email:"",
+            password:""
+        })
     }
 
     render() {
@@ -40,17 +44,17 @@ class SignUp extends React.Component {
                         </h2>
                     </div>
                     <div className="container-form">
-                        <form>
+                        <div className="form">
                             <div>
                                 <i><FontAwesomeIcon className="email-icon" icon={faEnvelope}></FontAwesomeIcon></i>
-                                <input className="input-signup" placeholder="Email" id="email" type="text" onChange={this.handleChangeText} required/>
+                                <input className="input-signup" placeholder="Email" id="email" type="text" onChange={this.handleChangeText} value={this.state.email} required/>
                             </div>
                             <div>
                                 <i><FontAwesomeIcon className="lock-icon" icon={faLock}></FontAwesomeIcon></i>
-                                <input className="input-signup" placeholder="Password" id="password" type="password" onChange={this.handleChangeText} required/>
+                                <input className="input-signup" placeholder="Password" id="password" type="password" onChange={this.handleChangeText} value={this.state.password} required/>
                             </div>
                             <Button onClick={this.handleDaftar} title="Daftar" loading={this.props.Loading} />
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div className="container-signup2">
