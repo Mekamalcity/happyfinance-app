@@ -5,7 +5,6 @@ import { faChartColumn, faPersonCircleCheck, faListSquares, faDesktop, faBasketS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fade, AttentionSeeker } from 'react-awesome-reveal';
 
-
 function Main1() {
     return (
         <div className="main1">

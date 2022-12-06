@@ -1,23 +1,17 @@
 import React from "react";
 import { connect } from 'react-redux';
 import NavigationUser from "../../component/NavigationUser/navigationUser";
-import './user.css'
+import './article-page.css'
 
-function User({ user }) {
+function ArticlePage() {
     return (
         <div>
             <NavigationUser />
             <div className="user-container">
                 <h2>
-                    Selamat Datang
-                </h2>
-                <h2>
-                    {user.email}
+                    Article
                 </h2>
                 <div>
-                    <button>
-                        Keluar
-                    </button>
                 </div>
             </div>
         </div>
@@ -29,4 +23,4 @@ const reduxState = (state) => ({
     isLogin: state.isLogin
 })
 
-export default connect(reduxState, null)(User);
+export default connect(reduxState, null)(ArticlePage);

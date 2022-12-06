@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../../Asset/img/Logo.png'
+import logo from '../../Asset/img/Logo.png';
+import { faUser } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function NavigationUser() {
     return (
@@ -12,21 +14,26 @@ function NavigationUser() {
             </Link>
             <div>
                 <ul className="navlandingpage">
+                    <Link style={{ textDecoration: 'none' }} to="/app">
+                        <li>
+                            Keuangan
+                        </li>
+                    </Link>
+                    <Link style={{ textDecoration: 'none' }} to="/article">
+                        <li>
+                            Artikel
+                        </li>
+                    </Link>
                     <li>
-                        Keuangan
-                    </li>
-                    <li>
-                        Artikel
-                    </li>
-                    <li>
-                        User
+                        Kontak
                     </li>
                 </ul>
             </div>
             <div>
-                <Link to="/signup">
+                <Link to="/">
                     <button>
-                        Daftar
+                        <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+                        Profil
                     </button>
                 </Link>
             </div>

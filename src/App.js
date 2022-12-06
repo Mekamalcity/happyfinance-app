@@ -1,12 +1,15 @@
 import React from "react";
 import { Routes, Route } from 'react-router-dom'
+import { connect } from 'react-redux';
+
+
 import LandingPage from "./pages/landingpage/LandingPage";
 import LogIn from "./pages/login/LogIn";
 import SignUp from "./pages/signup/SignUp";
 import User from "./pages/user/User";
-import { Provider } from "react-redux";
-import { store } from './config/redux';
-import { connect } from 'react-redux'
+import NotFound from "./pages/pageNotFound";
+import ArticlePage from "./pages/article/articlepage";
+import ManagementPage from "./pages/management/ManagemetPage";
 
 
 class App extends React.Component {
@@ -18,6 +21,7 @@ class App extends React.Component {
             <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="/login" element={<LogIn />} />
+              <Route path="/*" element={<LogIn />} />
               <Route path="/signup" element={<SignUp />} />
             </Routes>
           </main>
@@ -28,7 +32,9 @@ class App extends React.Component {
         <div>
           <Routes>
             <Route path="/" element={<User />} />
-            <Route path="/login" element={<LogIn />} />
+            <Route path="/*" element={<NotFound />} />
+            <Route path="/article" element={<ArticlePage />} />
+            <Route path="/app" element={<ManagementPage />} />
           </Routes>
         </div>
     );
