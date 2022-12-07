@@ -24,9 +24,11 @@ function NavigationUser() {
                             Artikel
                         </li>
                     </Link>
+                    <Link style={{ textDecoration: 'none' }} to="/kontak">
                     <li>
                         Kontak
                     </li>
+                    </Link>
                 </ul>
             </div>
             <div>

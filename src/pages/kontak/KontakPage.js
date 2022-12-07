@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from 'react-redux';
 import NavigationUser from "../../component/NavigationUser/navigationUser";
-import './kontak-page.css'
+// import './kontak-page.css'
 
 function KontakPage() {
     return (

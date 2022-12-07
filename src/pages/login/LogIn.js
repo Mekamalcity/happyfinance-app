@@ -9,28 +9,26 @@ import { loginUserAPI } from "../../config/redux/action";
 import { useNavigate } from "react-router-dom";
 
 
-function LogIn({Loading, user, loginAPI, isLogin}) {
+function LogIn({ Loading, user, loginAPI, isLogin, userData }) {
     const navigate = useNavigate()
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
-    function handleEmail(e){
+    function handleEmail(e) {
         setEmail(e.target.value)
     }
-    function handlePassword(e){
+    function handlePassword(e) {
         setPassword(e.target.value)
     }
-    async function HandleMasuk(){
+    async function HandleMasuk() {
         let data = await loginAPI({ email, password }).catch(err => err);
         console.log(data)
-        if (data === true) {
-            console.log(user)
-            console.log(isLogin)
+        if (data !== null) {
             setEmail('')
             setPassword('')
             navigate("/")
         } else {
-            console.log('login fail')
+            // console.log('login fail')
         }
     }
     return (
@@ -92,7 +90,7 @@ const reduxState = (state) => ({
 })
 
 const reduxDispatch = (dispatch) => ({
-    loginAPI: (data) => dispatch(loginUserAPI(data))
+    loginAPI: (data) => dispatch(loginUserAPI(data)),
 })
 
 export default connect(reduxState, reduxDispatch)(LogIn);

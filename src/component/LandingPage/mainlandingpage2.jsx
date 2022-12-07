@@ -10,8 +10,13 @@ function Main5() {
                     </h1>
                     <hr />
                     <div>
-                        <div>
+                        <div className="item-ourteam">
+                            <div>
 
+                            </div>
+                            <h2>
+                                Farigh Mukhlashin Akmalullah
+                            </h2>
                         </div>
                         <div>
 
@@ -30,6 +35,9 @@ function Main5() {
 function Main6() {
     return (
         <div>
+            <div>
+
+            </div>
             <h1>Contact Us</h1>
         </div>
     )

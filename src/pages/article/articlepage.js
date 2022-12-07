@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from 'react-redux';
 import NavigationUser from "../../component/NavigationUser/navigationUser";
-import './article-page.css'
+// import './article-page.css'
 
 function ArticlePage() {
     return (

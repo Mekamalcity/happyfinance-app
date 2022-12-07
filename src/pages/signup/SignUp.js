@@ -1,14 +1,14 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import '../../styles/signup/signup.css';
 import Button from "../../component/Atoms/Button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLock, faLeftLong } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { signupUserAPI } from "../../config/redux/action";
+import { signupUserAPI, userData } from "../../config/redux/action";
 import { useNavigate } from "react-router-dom";
 
-function SignUp({ Loading, user, signupAPI, isLogin }) {
+function SignUp({ Loading, user, signupAPI, isLogin, userData }) {
     const navigate = useNavigate()
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -19,11 +19,19 @@ function SignUp({ Loading, user, signupAPI, isLogin }) {
     function handlePassword(e) {
         setPassword(e.target.value)
     }
-    function handleDaftar (){
-        signupAPI({ email, password })
-        setEmail('')
-        setPassword('')
-        navigate('/login')
+    async function handleDaftar() {
+        let data = await signupAPI({ email, password }).catch(err => err);
+        console.log(data)
+        if (data !== null) {
+            setEmail('')
+            setPassword('')
+            userData(data)
+            setTimeout(() => {
+                navigate('/login')
+            }, 2000);
+        } else {
+            console.log('login fail')
+        }
     }
     return (
         <div className="container">
@@ -81,7 +89,8 @@ const reduxState = (state) => ({
 })
 
 const reduxDispatch = (dispatch) => ({
-    signupAPI: (data) => dispatch(signupUserAPI(data))
+    signupAPI: (data) => dispatch(signupUserAPI(data)),
+    userData: (data) => dispatch(userData(data))
 })
 
 export default connect(reduxState, reduxDispatch)(SignUp);

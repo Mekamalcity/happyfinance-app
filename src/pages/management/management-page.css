@@ -1,4 +1,4 @@
-.user-container{
+.management-container{
     margin: 0;
     width: 100%;
     height: 100%; 
@@ -10,11 +10,28 @@
     justify-content: center;
     flex-direction: column;
 }
-.user-container button{
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.input-container button{
     width: 100px;
     height: 35px;
     border-radius: 30px;
-    background-color: red;
+    background-color: blue;
     border-style: none;
     color: white;
+    margin-top: 10px;
+}
+.item-data{
+    width: 80%;
+    border-width: 1;
+    border-color: black;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 10px;
+    margin: 10px;
+    
 }
