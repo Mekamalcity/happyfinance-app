@@ -1,1 +1,1 @@
-export * from "./firestore";
+export * from "../redux/store/firestore";
