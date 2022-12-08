@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { connect } from 'react-redux';
 import NavigationUser from "../../component/NavigationUser/navigationUser";
 import './management-page.css';
@@ -26,15 +26,14 @@ function ManagementPage({addDataToAPI, user}) {
         // console.log(jumlah)
     }
     const handleSaveAPI = () => {
+        const userData = JSON.parse(localStorage.getItem('user'))
         const data = {
             jumlah,
             tanggal,
             kategori,
             keterangan,
-            userId: user.uid
+            userId: userData.uid
         }
-        console.log(user)
-        console.log(data)
         addDataToAPI(data)
         // alert('berhasil')
     }

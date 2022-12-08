@@ -23,10 +23,11 @@ function LogIn({ Loading, user, loginAPI, isLogin, userData }) {
     async function HandleMasuk() {
         let data = await loginAPI({ email, password }).catch(err => err);
         console.log(data)
-        if (data !== null) {
+        if (data !== false) {
             setEmail('')
             setPassword('')
             navigate("/")
+            localStorage.setItem('user', JSON.stringify(data))
         } else {
             // console.log('login fail')
         }

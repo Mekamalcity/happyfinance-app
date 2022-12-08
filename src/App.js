@@ -13,8 +13,12 @@ import KontakPage from "./pages/kontak/KontakPage";
 
 
 class App extends React.Component {
+  componentDidMount() {
+    const userData = JSON.parse(localStorage.getItem('user'))
+  }
   render() {
-    if (this.props.isLogin === false) {
+    const userData = JSON.parse(localStorage.getItem('user'))
+    if (userData === null) {
       return (
         <div>
           <main>
@@ -29,15 +33,15 @@ class App extends React.Component {
       )
     }
     return (
-        <div>
-          <Routes>
-            <Route path="/" element={<User />} />
-            <Route path="/*" element={<NotFound />} />
-            <Route path="/article" element={<ArticlePage />} />
-            <Route path="/app" element={<ManagementPage />} />
-            <Route path="/kontak" element={<KontakPage />} />
-          </Routes>
-        </div>
+      <div>
+        <Routes>
+          <Route path="/" element={<User />} />
+          <Route path="/*" element={<NotFound />} />
+          <Route path="/article" element={<ArticlePage />} />
+          <Route path="/app" element={<ManagementPage />} />
+          <Route path="/kontak" element={<KontakPage />} />
+        </Routes>
+      </div>
     );
   }
 

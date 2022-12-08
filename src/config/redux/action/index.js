@@ -95,4 +95,6 @@ export const userData = (data) => (dispatch) => {
     console.log(data)
 }
 
-
+export const getDataToAPI = (userID) => (dispatch) => {
+    const urlManagement = ref(database, 'management/' + userID);
+}
