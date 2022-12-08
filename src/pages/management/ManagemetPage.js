@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { connect } from 'react-redux';
 import NavigationUser from "../../component/NavigationUser/navigationUser";
 import './management-page.css';
-import { addDataToAPI } from "../../config/redux/action";
+import { addDataToAPI } from "../../config/redux/action/action";
 
 function ManagementPage({addDataToAPI, user}) {
     const [jumlah, setJumlah] = useState("")

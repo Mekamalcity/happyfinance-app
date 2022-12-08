@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { connect } from 'react-redux'
 import '../../styles/signup/signup.css'
-import Button from "../../component/Atoms/Button";
+import Button from "../../component/Atoms/Button/button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLock, faLeftLong } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-router-dom";
-import { loginUserAPI } from "../../config/redux/action";
+import { loginUserAPI } from "../../config/redux/action/action";
 import { useNavigate } from "react-router-dom";
 
 

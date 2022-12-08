@@ -6,7 +6,7 @@ import LandingPage from "./pages/landingpage/LandingPage";
 import LogIn from "./pages/login/LogIn";
 import SignUp from "./pages/signup/SignUp";
 import User from "./pages/user/User";
-import NotFound from "./pages/pageNotFound";
+import NotFound from "./pages/pageNotFound/notFound";
 import ArticlePage from "./pages/article/articlepage";
 import ManagementPage from "./pages/management/ManagemetPage";
 import KontakPage from "./pages/kontak/KontakPage";

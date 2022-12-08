@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import '../../styles/signup/signup.css';
-import Button from "../../component/Atoms/Button";
+import Button from "../../component/Atoms/Button/button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLock, faLeftLong } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { signupUserAPI, userData } from "../../config/redux/action";
+import { signupUserAPI, userData } from "../../config/redux/action/action";
 import { useNavigate } from "react-router-dom";
 
 function SignUp({ Loading, user, signupAPI, isLogin, userData }) {
