@@ -93,8 +93,8 @@ function ArticlePage() {
                     <div class="col-6 col-lg-2 mb-3">
                         <h5>Team</h5>
                         <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Farid Akmal</a></li>
-                        <li class="mb-2"><a href="https://www.linkedin.com/in/sakadzun">Saka Dzun</a></li>
+                        <li class="mb-2"><a href="#">Farid</a></li>
+                        <li class="mb-2"><a href="https://www.linkedin.com/in/sakadzun">Saka</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-lg-2 mb-3">
