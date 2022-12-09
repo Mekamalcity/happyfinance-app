@@ -14,20 +14,15 @@ function NavigationUser() {
             </Link>
             <div>
                 <ul className="navlandingpage">
-                    <Link style={{ textDecoration: 'none' }} to="/app">
+                    <Link style={{ textDecoration: 'none', marginLeft: 700, marginTop: 10 }} to="/app">
                         <li>
                             Keuangan
                         </li>
                     </Link>
-                    <Link style={{ textDecoration: 'none' }} to="/article">
+                    <Link style={{ textDecoration: 'none', marginTop: 10 }} to="/article">
                         <li>
                             Artikel
                         </li>
-                    </Link>
-                    <Link style={{ textDecoration: 'none' }} to="/kontak">
-                    <li>
-                        Kontak
-                    </li>
                     </Link>
                 </ul>
             </div>

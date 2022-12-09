@@ -9,7 +9,6 @@ import User from "./pages/user/User";
 import NotFound from "./pages/pageNotFound/notFound";
 import ArticlePage from "./pages/article/articlepage";
 import ManagementPage from "./pages/management/ManagemetPage";
-import KontakPage from "./pages/kontak/KontakPage";
 
 
 class App extends React.Component {
@@ -35,7 +34,6 @@ class App extends React.Component {
             <Route path="/*" element={<NotFound />} />
             <Route path="/article" element={<ArticlePage />} />
             <Route path="/app" element={<ManagementPage />} />
-            <Route path="/kontak" element={<KontakPage />} />
           </Routes>
         </div>
     );
