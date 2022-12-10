@@ -3,7 +3,7 @@ import React from "react";
 function Main5() {
     return (
         <div>
-            <div className="container-main5">
+            <div className="container-main5" id="about">
                 <div className="our-team">
                     <h1>
                         Our <font color="green">Team</font>
@@ -34,7 +34,7 @@ function Main5() {
 
 function Main6() {
     return (
-        <div>
+        <div id="kontak">
             <div>
 
             </div>

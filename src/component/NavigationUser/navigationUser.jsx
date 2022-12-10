@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from '../../Asset/img/Logo.png';
-import { faUser } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function NavigationUser() {
     return (
@@ -24,17 +22,11 @@ function NavigationUser() {
                             Artikel
                         </li>
                     </Link>
-                    <Link style={{ textDecoration: 'none' }} to="/kontak">
-                    <li>
-                        Kontak
-                    </li>
-                    </Link>
                 </ul>
             </div>
             <div>
                 <Link to="/">
                     <button>
-                        <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
                         Profil
                     </button>
                 </Link>

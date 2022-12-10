@@ -7,7 +7,7 @@ import { Fade, AttentionSeeker } from 'react-awesome-reveal';
 
 function Main1() {
     return (
-        <div className="main1">
+        <div className="main1" id="home">
             <div className="container-main1 fadeup">
                 <Fade direction="left">
                     <div>
@@ -123,7 +123,7 @@ function Main3() {
 }
 function Main4() {
     return (
-        <div className="container-main4">
+        <div className="container-main4" id="fitur">
             <div className="container-fitur">
                 <Fade direction="up">
                     <h1>
@@ -138,7 +138,7 @@ function Main4() {
                             Daftar Belanja
                         </h3>
                         <p>
-                            Dengan menggunakan HappyFinance App Anda dapat mngatur keuangan jadi lebih mudah dan tertata
+                            Dengan menggunakan HappyFinance App Anda dapat mengatur keuangan jadi lebih mudah dan tertata
                         </p>
                     </div>
                     <div className="fitur-item">

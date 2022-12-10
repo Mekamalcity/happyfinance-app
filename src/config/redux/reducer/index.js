@@ -2,7 +2,8 @@ const initialState = {
     popup: 'false',
     isLogin: false,
     Loading: false,
-    user: null
+    user: null,
+    management: []
   }
   
   const reducer = (state = initialState, action) => {
@@ -28,6 +29,12 @@ const initialState = {
       return {
         ...state,
         Loading: action.value
+      }
+    }
+    if (action.type === 'SET_MANAGEMENT') {
+      return {
+        ...state,
+        management: action.value
       }
     }
     return state

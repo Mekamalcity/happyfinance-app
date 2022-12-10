@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { connect } from 'react-redux'
 import '../../styles/signup/signup.css'
 import Button from "../../component/Atoms/Button";
@@ -9,10 +9,11 @@ import { loginUserAPI } from "../../config/redux/action";
 import { useNavigate } from "react-router-dom";
 
 
-function LogIn({ Loading, user, loginAPI, isLogin, userData }) {
+function LogIn({ Loading, user, loginAPI, isLogin, userData}) {
     const navigate = useNavigate()
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [log, setLog] = useState(1)
 
     function handleEmail(e) {
         setEmail(e.target.value)
@@ -26,10 +27,13 @@ function LogIn({ Loading, user, loginAPI, isLogin, userData }) {
         if (data !== false) {
             setEmail('')
             setPassword('')
-            navigate("/")
             localStorage.setItem('user', JSON.stringify(data))
+            console.log("uid", data.uid)
+            
+            navigate("/")
+            window.location.reload(false);
         } else {
-            // console.log('login fail')
+            console.log('login fail')
         }
     }
     return (
@@ -87,11 +91,11 @@ function LogIn({ Loading, user, loginAPI, isLogin, userData }) {
 const reduxState = (state) => ({
     Loading: state.Loading,
     user: state.user,
-    isLogin: state.isLogin
+    isLogin: state.isLogin,
 })
 
 const reduxDispatch = (dispatch) => ({
-    loginAPI: (data) => dispatch(loginUserAPI(data)),
+    loginAPI: (data) => dispatch(loginUserAPI(data))
 })
 
 export default connect(reduxState, reduxDispatch)(LogIn);
