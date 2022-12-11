@@ -7,8 +7,9 @@
     flex-direction: column;
 }
 
-#keuangan{
-    height: 120px;;
+#keuangan {
+    height: 120px;
+    ;
 }
 
 .edit {
@@ -20,6 +21,7 @@
     color: white;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .input-container {
@@ -33,7 +35,7 @@
     flex-direction: column;
 }
 
-.input-container button{
+.input-container button {
     width: 50%;
 }
 
@@ -85,20 +87,23 @@
     color: white;
     margin-top: 10px;
 }
-.search-item{
-    width:90%;
+
+.search-item {
+    width: 90%;
     height: 30px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
     border-style: none;
 }
-.search-container{
+
+.search-container {
     text-align: center;
     width: 80%;
     margin-bottom: 20px;
 }
-.btn-reset{
+
+.btn-reset {
     width: 150px;
     height: 30px;
     border-radius: 30px;
@@ -147,10 +152,34 @@
 
 .item-data {
     width: 80%;
-    border-width: 1;
-    border-color: black;
     border-radius: 10px;
-    border-style: solid;
-    padding: 10px;
     margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    align-items: center;
+}
+
+.item-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 650px) {
+    .item-data {
+        width: 80%;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+        align-items: center;
+        margin: 0px;
+    }
+
+    .keuangan {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
 }

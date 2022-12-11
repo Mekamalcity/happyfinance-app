@@ -55,7 +55,7 @@
 
 .form {
     position: relative;
-
+    align-items: center;
 }
 
 .container-signup2 {
@@ -126,6 +126,7 @@
 
 .container-form {
     width: 70%;
+    text-align: center;
 }
 
 .lock-icon {
@@ -203,7 +204,7 @@
     }
 
     .input-signup {
-        width: 90%;
+        width: 83%;
     }
 
     .container-signup2 {
@@ -214,6 +215,6 @@
 
 @media only screen and (max-width: 650px) {
     .input-signup {
-        width: 85%;
+        width: 80%;
     }
 }

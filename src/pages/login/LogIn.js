@@ -50,7 +50,7 @@ function LogIn({ Loading, user, loginAPI, isLogin, userData}) {
                     <p>
                         Senang Bertemu Denganmu Lagi
                     </p>
-                    <h2>Wellcome Back</h2>
+                    <h2>Welcome Back</h2>
                     <hr />
                     <p>
                         Belum Memiliki Akun? <br />

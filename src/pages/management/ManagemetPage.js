@@ -119,15 +119,19 @@ function ManagementPage({ addDataToAPI, user, getManagement, mymanagement, getDa
                                 return (
                                     <div className="item-data" key={management.id}>
                                         <div>
-                                            <h2>{management.data.jumlah}</h2>
+                                            <h2>Rp {management.data.jumlah},-</h2>
                                             <p>Tipe {management.data.kategori}</p>
                                         </div>
-                                        <p>Tanggal {management.data.tanggal}</p>
-                                        <p>Keterangan {management.data.keterangan}</p>
-                                        <HashLink to="#keuangan" smooth>
-                                            <button className="edit" onClick={() => { updateManagement(management) }}>Edit</button>
-                                        </HashLink>
-                                        <button className="btn-delete" onClick={(e) => deleteManagement({ e, management })}>Delete</button>
+                                        <div>
+                                            <p>{management.data.tanggal}</p>
+                                            <p>Keterangan {management.data.keterangan}</p>
+                                        </div>
+                                        <div className="item-btn">
+                                            <HashLink to="#keuangan" smooth>
+                                                <button className="edit" onClick={() => { updateManagement(management) }}>Edit</button>
+                                            </HashLink>
+                                            <button className="btn-delete" onClick={(e) => deleteManagement({ e, management })}>Delete</button>
+                                        </div>
                                     </div>
                                 )
                             })
@@ -138,14 +142,6 @@ function ManagementPage({ addDataToAPI, user, getManagement, mymanagement, getDa
             return null
         }
     }
-    // const handleKosong = ({ data }) => {
-    //     if (jumlah.length === 0 && tanggal.length === 0) {
-    //         return alert("data tanggal atau jumlah uang tidak boleh kosong")
-    //     }
-    //     else {
-    //         aksi(data)
-    //     }
-    // }
     const handleSaveAPI = () => {
         const userData = JSON.parse(localStorage.getItem('user'))
         const data = {

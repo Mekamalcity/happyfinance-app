@@ -20,24 +20,24 @@ function NavigationLandingPage() {
                     </HashLink>
                     <HashLink to="#fitur" smooth>
                         <li>
-                            Fitur
+                            Feature
                         </li>
                     </HashLink>
                     <HashLink to="#about" smooth>
                         <li>
-                            Tentang Kami
+                            About Us
                         </li>
                     </HashLink>
                     <HashLink to="#kontak" smooth>
                         <li>
-                            Kontak
+                            Contact Us
                         </li>
                     </HashLink>
                 </ul>
             </div>
             <div>
                 <Link to="/signup">
-                    <button>
+                    <button className="buttonLogin">
                         Daftar
                     </button>
                 </Link>

@@ -67,7 +67,7 @@ function SignUp({ Loading, user, signupAPI, isLogin, userData }) {
                     <p>
                         Senang Bertemu Denganmu
                     </p>
-                    <h2>Wellcome</h2>
+                    <h2>Welcome</h2>
                     <hr />
                     <p>
                         Sudah Memiliki Akun? <br />

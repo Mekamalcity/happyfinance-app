@@ -24,25 +24,25 @@
 }
 
 .navigation button {
-    color: darkorange;
+    color: white;
     font-weight: bolder;
     height: 40px;
     width: 100px;
     border-style: solid;
-    background-color: #bff0da;
+    background-color: green;
     border-width: 3px;
     border-radius: 12px;
-    border-color: orange;
+    border-color: green;
     margin-right: 50px;
 }
 
 .navigation button:hover {
     cursor: pointer;
-    background-color: orange;
-    color: white;
+    background-color: #bff0da;
+    color: green;
     height: 45px;
     width: 105px;
-    border-color: white;
+    border-color: green;
 }
 
 .navlandingpage {
@@ -60,6 +60,26 @@
 }
 
 .navlandingpage li:hover {
+    color: orange;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.navlandingpageUser {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    list-style: none;
+}
+
+.navlandingpageUser li {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bolder;
+    color: black;
+}
+
+.navlandingpageUser li:hover {
     color: orange;
     margin-top: 4px;
     cursor: pointer;
@@ -220,6 +240,12 @@
 
 
 @media only screen and (max-width: 750px) {
+    .navigation button{
+        margin-right: 0px;
+    }
+    .navigation img {
+        margin-left: 0px;
+    }
     .navlandingpage {
         display: none;
     }
@@ -251,5 +277,10 @@
     }
     .container-main3 hr{
         width: 100%;
+    }
+}
+@media only screen and (max-width: 777px){
+    .navlandingpage {
+        display: none;
     }
 }

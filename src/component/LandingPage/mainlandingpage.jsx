@@ -15,7 +15,10 @@ function Main1() {
                             Happy<font color="green">Finance</font>
                         </h1>
                         <p>
-                            HappyFinance app merupakan solusi<br /> mengatur keuangan untuk<br /> membantu pekerjaan rumah Anda
+                        Platform Penyedia layanan finance aplication 
+                        berbasis <br/>website dalam pengembangan ekonomi 
+                        keluarga, mahasiswa<br/> maupun perorangan 
+                        sehingga mempermudah masyarakat<br/> dalam membangun skala prioritas dalam hal keuangan
                         </p>
                         <Link to="/login">
                             <button className="buttonLogin">
@@ -47,9 +50,10 @@ function Main2() {
                         <hr />
                     </div>
                     <p>
-                        Happy<font color="green">Finance</font> app merupakan aplikasi berbasis web yang digunakan<br />
-                        untuk mengatur/mengelola keuangan serta daftar kebutuhan belanja agar<br />
-                        membantu ibu rumah tangga dalam menyelesaikan pekerjaan rumahnya.
+                        Happy<font color="green">Finance</font> app merupakan aplikasi berbasis web yang digunakan
+                        untuk mengatur/mengelola<br /> keuangan. Terutama pada saat Ekonomi sekarang yang semakin memburuk. Strategi perencanaan
+                         keuangan yang baik<br/> dan matang menjadi solusi atas kondisi yang tidak terduga. Maka dari itu, perencanaan keuangan
+                          dapat membantu ekonomi<br/> sebuah keluarga ataupun seorang individual terutama seorang mahasiswa yang sangat dibatasi ekonomi hariannya
                     </p>
                 </Fade>
             </div>
@@ -77,7 +81,7 @@ function Main3() {
                                 Mengatur Keuangan
                             </h3>
                             <p>
-                                Dengan menggunakan HappyFinance App Anda dapat mngatur keuangan jadi lebih mudah dan tertata
+                                Dengan menggunakan HappyFinance App Anda dapat mengatur keuangan jadi lebih mudah dan tertata
                             </p>
                         </div>
                     </AttentionSeeker>
@@ -138,7 +142,7 @@ function Main4() {
                             Daftar Belanja
                         </h3>
                         <p>
-                            Dengan menggunakan HappyFinance App Anda dapat mengatur keuangan jadi lebih mudah dan tertata
+                            Dengan Happyfinance app kita jadi mengetahui<br/> setiap pengeluaran untuk belanjaan
                         </p>
                     </div>
                     <div className="fitur-item">
@@ -147,16 +151,7 @@ function Main4() {
                             Menajemen Keuangan
                         </h3>
                         <p>
-                            Dengan menggunakan HappyFinance App Anda dapat mngatur keuangan jadi lebih mudah dan tertata
-                        </p>
-                    </div>
-                    <div className="fitur-item">
-                        <FontAwesomeIcon className="fontAwesomeIcon-fitur" icon={faNewspaper}></FontAwesomeIcon>
-                        <h3>
-                            Artikel
-                        </h3>
-                        <p>
-                            Dengan menggunakan HappyFinance App Anda dapat mngatur keuangan jadi lebih mudah dan tertata
+                            Dengan management keuanga Happyfinanve app kita jadi<br/> dapat mengatur mengeluaran dan pemasukan
                         </p>
                     </div>
                 </div>

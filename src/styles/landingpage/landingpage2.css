@@ -53,10 +53,10 @@
     border-bottom-right-radius: 300px;
 }
 .our-team{
-    width: 80%;
+    width: auto;
+    text-align: center;
 }
 .our-team hr{
-    width: 500px;
     background-color: black;
     height: 2px;
     border-style: none;
@@ -70,7 +70,48 @@
     height: 300px;
     font-weight: bold;
 }
-
+.item-ourteam{
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.item-ourteam button{
+    height: 35px;
+    margin-top: 20px;
+    width: 200px;
+    color: white;
+    border-radius: 10px;
+    background-color: blue;
+    border-style: none;
+}
+.img-me{
+    border-radius: 1000px;
+    width: auto;
+}
+.kontak{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.item-kontak{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.kontak img{
+    width: 50px;
+}
+.item-ourteam h2{
+    margin-top: 10px;
+}
+.img-me img{
+    width: 300px;
+    border-radius: 1000px;
+}
 @media only screen and (max-width: 750px) {
     .fitur-happyfinance{
         flex-direction: column;
@@ -85,5 +126,13 @@
     }
     .our-team hr{
         width: 100%;
+    }
+    .img-me{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .item-kontak{
+        grid-template-columns: 1fr;
     }
 }

@@ -7,7 +7,7 @@ import LogIn from "./pages/login/LogIn";
 import SignUp from "./pages/signup/SignUp";
 import User from "./pages/user/User";
 import NotFound from "./pages/pageNotFound";
-import ArticlePage from "./pages/article/articlepage";
+import Tutorial from "./pages/tutorial/tutorial.js";
 import ManagementPage from "./pages/management/ManagemetPage";
 
 
@@ -36,7 +36,7 @@ class App extends React.Component {
         <Routes>
           <Route path="/" element={<User />} />
           <Route path="/*" element={<NotFound />} />
-          <Route path="/article" element={<ArticlePage />} />
+          <Route path="/tutorial" element={<Tutorial />} />
           <Route path="/app" element={<ManagementPage />} />
           
           {/* <Route path="/login" element={<LogIn />} /> */}
