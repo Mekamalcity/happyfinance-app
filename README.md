@@ -1,101 +1,77 @@
-#HappyFinnance#
+Team ID 		: C22-246
+Tema			: HappyFinance App ( Finansial aplication ) – Solusi accounting 
+  dalam lingkup Keluarga, mahasiswa dan individu
+  
+Tema yang dipilih : Solusi Aplikasi Utilitas
 
-HappyFinance app app merupakan aplikasi yang dibuat untuk menyelesaikan permasalahan ibu rumah tangga.
+Backgrounder
+Pada masa ekonomi dunia yang semakin buruk akibat perang dan krisis energi dunia.
+Krisis energi membuat harga komoditas tersebut melambung. Karenanya, para pemimpin negara anggota Uni Eropa menyepakati peta jalan sebagai langkah untuk melindungi konsumen dari lonjakan harga energi.
 
-List Fitur
-Log In, Sign Out
-Keuangan Belanja
-Artikel
+Dikarenakan harga komoditas yang tidak tentu dan sebagai bentuk penanggulangan untuk kedepannya maka kita perlu melakukan finansial planing yang bagus dan pintar sehingga menghindari masalah ekonomi individual kita sendiri.
+
+Financial planning dapat mempermudah masyarakat dalam membangun skala prioritas dalam hal keuangan, terutama pada saat Ekonomi sekarang yang semakin memburuk. Kondisi ini mengharuskan masyarakat untuk mengurangi pengeluaran dan mulai berhemat yang kemudian berdampak pada keadaan ekonomi seseorang. Strategi perencanaan keuangan yang baik dan matang menjadi solusi atas kondisi yang tidak terduga. Maka dari itu, perencanaan keuangan dapat membantu ekonomi sebuah keluarga ataupun seorang individual terutama seorang mahasiswa yang sangat dibatasi ekonomi hariannya dan mencegah krisis ekonomi pada masa krisis ekonomi dunia akibat perang yang berkelanjutan.
+
+Aplikasi ini merupakan salah satu solusi dan memudahkan seseorang dalam melakukan finansial planing. Setiap keluarga, mahasiswa, atau perorangan biasa dapat melakukan finansial ini dimanapun dan kapanpun.
+
+Untuk mencapai tujuan tersebut, proses pengerjaan proyek berlangsung mulai tanggal 6 November - 11 Desember 2022.
+
+
+Progres pembuatan aplikasi ReactJS :
+	Untuk minggu pertama kami melakukan perencanaan dan proses dari aplikasi tersebut, sekaligus pembuatan dari UI/UX dari aplikasi tersebut.
+	Pada minggu ke dua kami melakukan pengcodingan front-end pada aplikasi tersebut menggunakan ReactJS.
+	Pada minggu ke tiga kami melakukan konfigurasi pada pembuatan database menggunakan firebase yaitu pembuatan data autentikasi login dan pembuatan table untuk pengisian Pemasukan, Pengeluaran, Saldo dan list history. 
+	Pada minggu ke empat dan kelima kami membuat fitur yang terdapat pada aplikasi HappyFinnance yaitu fitur keuangan, uang keluar dan uang masuk, form pengisian, saldo, artikel dan lain sebagainya 
+
+Pengerjaan pengcodingan dikerjakan sendiri dari pengerjaan front-end development sehingga pengerjaan backend dan database menggunakan firebase.
+
+Screenshots
 
  
-Problem Statement 
-Seorang Ibu rumah tangga yang masih kesulitan mengatur keuangan dan daftar kebutuhan belanja.
  
-Research Questions 
-Bagaimana caranya agar ibu rumah tangga dapat lebih mudah mengelola daftar belanja dan keuangannya?
+Gambar 1 Homepage 
 
-Latar Belakang 
-Tujuan dalam membuat aplikasi ini agar dapat membantu pekerjaan ibu rumah tangga menyelesaikan pekerjaannya dengan lebih mudah
+ 
+Gambar 2. Login page
 
-Mengapa tim Anda memilih proyek ini
-Kita mengambil tema ini dikarenakan kami belum menemukan aplikasi yang dapat mengatasi permasalahan yang kami definisikan.
+ 
+Gambar 3. Signup Page
 
-Project Scope & Deliverables :
-Project Scope :
-Fitur Log In, Sign Out
-yang dibuat :
-Input data login (nama pengguna, sandi)
-Input data daftar (email,nama pengguna,nama lengkap,sandi)
-fitur logout
-menampilkan data pengguna di halaman akun
-yang tidak dibuat :
-menyimpan data dan membuat  auto-login “remember me”
-fitur lupa sandi
+ 
 
-Fitur Keuangan Belanja
-yang dibuat
-Membuat data jumlah saldo keuangan
-Input pengeluaran (Input daftar belanja (Nama daftar belanja, Hari|Tanggal|Bulan, Daftar nama belanja, jumlah yang dibeli, jumlah harga))
-Input pemasukan  (jumlah, keterangan, tanggal, sumber dana)
-Mengedit data pengeluaran dan pemasukan
-Menampilkan data perbandingan pengeluaran dan pemasukan
-Memfilter data per tanggal/bulan/tahun
-yang tidak dibuat
-E- payment
-Scan barcode
-Transfer uang
+Gambar 4. Management Page
 
-Artikel
-yang dibuat :
-Menampilkan artikel keuangan dan masakan
-Menampilkan pencarian dan filter
-yang tidak dibuat :
-Translate bahasa
-Update artikel
-Menampilkan video
-Menampilkan artikel dengan tema lain
 
-Deliverables :
-Membuat aplikasi yang memiliki fitur pengelolaan daftar belanja
-Membuat aplikasi yang memiliki fitur pengelolaan keuangan belanja
-Membuat aplikasi yang dapat memberikan informasi bagaimana caranya mengelola keuangan dengan baik dan benar.
 
-Milestone :
-Membuat tampilan user interface dan user experience 27 Oktober 2022
-WELCOME PAGE
-Halaman Utama
-Navigasi ( Features, About Us, Contact Us )
-Tentang Aplikasi
-Tombol Daftar/Login
-Features
-About Us
-Contact us
-LOGIN
-halaman login, 
-halaman daftar akun,
-halaman daftar pengguna, 
-BERANDA
-halaman keuangan belanja 
-data perbandingan pemasukan dan pengeluaran, 
-jumlah pemasukan 
-jumlah pengeluaran 
-Navbar
-	KEUANGAN
-halaman input pemasukan
-Nama keterangan
-Jumlah Pemasukan
-Tanggal Pemasukan
-Sumber dana
-halaman input pengeluaran
-Input daftar belanja 
-Nama daftar belanja, 
-Hari Tanggal Bulan, 
-Daftar nama belanja, 
-jumlah yang dibeli, 
-Jumlah harga
-MUTASI
-Halaman untuk menampilkan daftar nama belanja
-menampilkan data nota belanja
-ARTIKEL
-Halaman daftar artikel
-Navbar (search, search filter)
+
+
+Deployed Link: 
+https://happyfinanceapp.web.app/
+
+Github Repo Link:
+https://github.com/Mekamalcity/happyfinance-app
+
+Video Presentation Link:
+https://www.youtube.com/watch?v=9-lZ-AwX7pQ
+
+Slide Presentation Link:
+https://docs.google.com/presentation/d/1RgIRzqI2xN27OIe-WFZp4qMXF5EKgH3w/edit#slide=id.p1
+
+
+Other Resources Link:
+●	Library or external repository/API used:
+○	ReactJS
+○	Redux
+○	Firebase API : https://happyfinanceapp-default-rtdb.asia-southeast1.firebasedatabase.app/
+○	Font-awesome
+
+●	Dataset link:
+Tidak menggunakan dataset
+
+●	Academic Paper & References Link:
+[1]	CNN Indonesia, “Dunia Sedang Dalam Krisis Energi untuk Pertama Kali”, https://www.cnnindonesia.com/ekonomi/20221025124047-85-865046/dunia-sedang-dalam-krisis-energi-untuk-pertama-kali, diakses pada 10 desember 2022.
+[2]	KKN undip tim 2, “Pentingnya Financial Planning di Masa Pandemi COVID-19, Mahasiswa KKN Undip Berikan Edukasi Tips Financial Planning”, http://kkn.undip.ac.id/?p=325813#:~:text=Financial%20planning%20dapat%20mempermudah%20masyarakat,berdampak%20pada%20keadaan%20ekonomi%20seseorang, diakses pada 10 desember 2022.
+
+Demo Video Link:
+https://www.youtube.com/watch?v=yz6Ee2lBgMQ
+
