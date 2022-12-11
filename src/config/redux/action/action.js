@@ -1,5 +1,5 @@
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import { getDatabase, push, ref, set } from "firebase/database";
+import { push, ref, set } from "firebase/database";
 import app, { database } from "../../firebase/firebase";
 const auth = getAuth(app);
 
@@ -9,7 +9,7 @@ export const signupUserAPI = (data) => (dispatch) => {
         createUserWithEmailAndPassword(auth, data.email, data.password)
             .then((userCredential) => {
                 // Signed in 
-                const user = userCredential.user;
+               
                 const datauser = {
                     email: userCredential.user.email,
                     uid: userCredential.user.uid,
