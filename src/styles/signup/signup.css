@@ -35,12 +35,9 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    /* height:auto; */
     align-items: center;
     justify-content: center;
-    /* border-color: black;
-    border-width: 2;
-    border-style: solid; */
+
 }
 
 .input-signup {

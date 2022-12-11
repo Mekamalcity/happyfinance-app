@@ -49,11 +49,11 @@
     justify-content: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    border-top-left-radius: 300px;
     border-bottom-right-radius: 300px;
 }
 .our-team{
     width: 80%;
+    text-align: center;
 }
 .our-team hr{
     width: 500px;
@@ -69,21 +69,4 @@
     background-color: #bff0da;
     height: 300px;
     font-weight: bold;
-}
-
-@media only screen and (max-width: 750px) {
-    .fitur-happyfinance{
-        flex-direction: column;
-    }
-    .container-main4{
-        height: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .container-fitur hr{
-        width: 100%;
-    }
-    .our-team hr{
-        width: 100%;
-    }
 }

@@ -2,8 +2,6 @@ import React from "react";
 import { connect } from 'react-redux';
 import NavigationUser from "../../component/NavigationUser/navigationUser";
 import './user.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 function User({ user }) {
     return (

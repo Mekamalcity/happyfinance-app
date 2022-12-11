@@ -31,3 +31,9 @@ code {
   color: #555;
 }
 
+.link-profil a{
+  text-decoration: none;
+  color: #f09930;
+  font-weight: bold;
+}
+

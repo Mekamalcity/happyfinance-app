@@ -2,7 +2,8 @@ const initialState = {
     popup: 'false',
     isLogin: false,
     Loading: false,
-    user: {}
+    user: {},
+    transactions: []
   }
   
   const reducer = (state = initialState, action) => {
@@ -28,6 +29,18 @@ const initialState = {
       return {
         ...state,
         Loading: action.value
+      }
+    }
+    if (action.type === 'DELETE_TRANSACTION') {
+    return {
+      ...state,
+      transactions: state.transactions.filter(transaction => transaction.id !== action.payload)
+      }
+    }
+    if (action.type === 'ADD_TRANSACTION') {
+    return {
+      ...state,
+      transactions: [action.payload, ...state.transactions]
       }
     }
     return state

@@ -11,18 +11,16 @@ function NavigationLandingPage() {
                 </div>
             </Link>
             <div>
-                <ul className="navlandingpage">
+                <ul className="navlandingpage" style={{ marginLeft: 600, marginTop: 10 }}>
+                   
                     <li>
-                        Home
+                        <a href="#fitur" style={{ textDecoration: 'none',color: '#f09930' }}>Fitur</a>
                     </li>
                     <li>
-                        Fitur
+                        <a href="#tentang" style={{ textDecoration: 'none',color: '#f09930' }}> Tentang Kami </a>
                     </li>
                     <li>
-                        Tentang Kami
-                    </li>
-                    <li>
-                        Kontak
+                        <a href="#kontak" style={{ textDecoration: 'none',color: '#f09930' }}>Kontak </a>
                     </li>
                 </ul>
             </div>

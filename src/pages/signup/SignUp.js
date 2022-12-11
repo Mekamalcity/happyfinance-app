@@ -45,7 +45,7 @@ function SignUp({ Loading, user, signupAPI, isLogin, userData }) {
             <div className="container-signup1">
                 <div>
                     <h2>
-                        Signup Account
+                        Daftar
                     </h2>
                 </div>
                 <div className="container-form">
@@ -64,14 +64,12 @@ function SignUp({ Loading, user, signupAPI, isLogin, userData }) {
             </div>
             <div className="container-signup2">
                 <div className="menuju-login">
-                    <p>
-                        Senang Bertemu Denganmu
-                    </p>
-                    <h2>Wellcome</h2>
+            
+                    <h2>Selamat datang &#128512;</h2>
                     <hr />
                     <p>
                         Sudah Memiliki Akun? <br />
-                        Silahkan LogIn Di bawah
+                        Silahkan Login di bawah
                     </p>
                     <Link to={"/login"}>
                         <button>

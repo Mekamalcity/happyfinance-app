@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom"
 import imgmain1 from '../../Asset/img/main1.png'
-import { faChartColumn, faPersonCircleCheck, faListSquares, faDesktop, faBasketShopping, faNewspaper } from "@fortawesome/free-solid-svg-icons"
+import { faChartColumn, faBasketShopping, faNewspaper } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Fade, AttentionSeeker } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 function Main1() {
     return (
@@ -37,7 +37,7 @@ function Main1() {
 
 function Main2() {
     return (
-        <div className="container-main2">
+        <div className="container-main2" id="tentang">
             <div>
                 <Fade direction="up">
                     <div>
@@ -59,71 +59,7 @@ function Main2() {
 
 function Main3() {
     return (
-        <div className="container-main3">
-            <div className="all-item-main3">
-                <Fade direction="up">
-                    <div className="title-main3">
-                        <h1>
-                            Kenapa Memilih <font color="green">Happy</font>Finance?
-                        </h1>
-                        <hr />
-                    </div>
-                </Fade>
-                <div className="why-happyfinance">
-                    <AttentionSeeker className="fade" effect="pulse">
-                        <div className="why-item-2">
-                            <FontAwesomeIcon className="fontAwesomeIcon" icon={faChartColumn}></FontAwesomeIcon>
-                            <h3>
-                                Mengatur Keuangan
-                            </h3>
-                            <p>
-                                Dengan menggunakan HappyFinance App Anda dapat mngatur keuangan jadi lebih mudah dan tertata
-                            </p>
-                        </div>
-                    </AttentionSeeker>
-                    <AttentionSeeker className="fade" effect="pulse">
-                        <div className="why-item-1">
-                            <FontAwesomeIcon className="fontAwesomeIcon" icon={faPersonCircleCheck}></FontAwesomeIcon>
-                            <h3>
-                                Mudah Digunakan
-                            </h3>
-                            <p>
-                                HappyFinance App sangat mudah digunakan untuk keperluan mengatur keuangan
-                            </p>
-                        </div>
-                    </AttentionSeeker>
-                </div>
-                <div className="why-happyfinance">
-                    <AttentionSeeker className="fade" effect="pulse">
-                        <div className="why-item-1">
-                            <FontAwesomeIcon className="fontAwesomeIcon" icon={faListSquares}></FontAwesomeIcon>
-                            <h3>
-                                Membuat Daftar Belanja
-                            </h3>
-                            <p>
-                                Dengan menggunakan HappyFinance App Anda jadi dapat membuat daftar belanjaan agar lebih mudah mengatur keuangan
-                            </p>
-                        </div>
-                    </AttentionSeeker>
-                    <AttentionSeeker className="fade" effect="pulse">
-                        <div className="why-item-2">
-                            <FontAwesomeIcon className="fontAwesomeIcon" icon={faDesktop}></FontAwesomeIcon>
-                            <h3>
-                                Dapat diakses kapanpun
-                            </h3>
-                            <p>
-                                HappyFinance App sangat mudah diakses kapanpun baik di smartphone maupun desktop
-                            </p>
-                        </div>
-                    </AttentionSeeker>
-                </div>
-            </div>
-        </div>
-    )
-}
-function Main4() {
-    return (
-        <div className="container-main4">
+        <div className="container-main3" id="fitur">
             <div className="container-fitur">
                 <Fade direction="up">
                     <h1>
@@ -165,4 +101,4 @@ function Main4() {
     )
 }
 
-export { Main1, Main2, Main3, Main4 };
+export { Main1, Main2, Main3 };

@@ -42,14 +42,12 @@ function LogIn({ Loading, user, loginAPI, isLogin, userData }) {
             </Link>
             <div className="container-signup2">
                 <div className="menuju-login">
-                    <p>
-                        Senang Bertemu Denganmu Lagi
-                    </p>
-                    <h2>Wellcome Back</h2>
+                   
+                    <h2>Selamat datang &#128512;</h2>
                     <hr />
                     <p>
-                        Belum Memiliki Akun? <br />
-                        Silahkan Daftar Di bawah
+                        Belum memiliki akun? <br />
+                        Silahkan daftar di bawah
                     </p>
                     <Link to={"/signup"}>
                         <button>
@@ -61,7 +59,7 @@ function LogIn({ Loading, user, loginAPI, isLogin, userData }) {
             <div className="container-signup1">
                 <div>
                     <h2>
-                        LogIn Account
+                        Masuk
                     </h2>
                 </div>
                 <div className="container-form">
