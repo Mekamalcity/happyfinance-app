@@ -158,7 +158,10 @@ function ManagementPage({ addDataToAPI, user, getManagement, mymanagement, getDa
             if (jumlah.length === 0 && tanggal.length === 0) {
                 return alert("data tanggal atau jumlah uang tidak boleh kosong")
             }
-            else {
+            else if (jumlah.length === 0 || tanggal.length === 0) {
+                return alert("data tanggal atau jumlah uang tidak boleh kosong")
+            }
+            else if ((jumlah.length !== 0 && tanggal.length !== 0)) {
                 addDataToAPI(data)
             }
             let userId = data.userId
